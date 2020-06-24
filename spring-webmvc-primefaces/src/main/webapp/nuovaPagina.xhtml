@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+</h:head>
+
+<h:body>
+
+
+	<h:form>
+		<span class="ui-float-label"> <p:inputText id="float-input"
+				value="#{cambiaPagina.nome}" />
+		</span>
+
+		<p:commandButton value="cambia pagina" id="ajax"
+			action="#{cambiaPagina.cambia}" style="margin-right:20px;"
+			styleClass="ui-priority-primary" />
+
+	</h:form>
+</h:body>
+
+</html>

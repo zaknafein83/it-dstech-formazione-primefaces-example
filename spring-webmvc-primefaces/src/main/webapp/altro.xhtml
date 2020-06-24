@@ -1,0 +1,20 @@
+<html xmlns="http://www.w3.org/1999/xhtml" 	xmlns:h="http://java.sun.com/jsf/html"	xmlns:f="http://java.sun.com/jsf/core"	xmlns:p="http://primefaces.org/ui">
+<h:head>
+</h:head>
+
+<h:body>
+
+
+<h:form>    
+ 
+   <h3>Floating Label</h3>
+   <span class="ui-float-label">
+       <p:inputText id="float-input" value="#{saluto.nome}" />
+       <p:outputLabel for="@previous" value="#{saluto.old}" />
+   </span>
+     <p:commandButton value="stampa in console" id="ajax" action="#{saluto.inverti}" style="margin-right:20px;" styleClass="ui-priority-primary" />
+ 
+</h:form>
+</h:body>
+
+</html>
